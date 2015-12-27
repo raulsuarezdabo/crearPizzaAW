@@ -1,8 +1,8 @@
 //
-//  InterfaceController.swift
-//  CreaPizzaAW WatchKit Extension
+//  FinishInterfaceController.swift
+//  CreaPizzaAW
 //
-//  Created by Raul Suarez Dabo on 26/12/15.
+//  Created by Raul Suarez Dabo on 27/12/15.
 //  Copyright © 2015 Raul Suarez Dabo. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class FinishInterfaceController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -28,4 +28,7 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func callNextView() {
+        popToRootController()
+    }
 }
